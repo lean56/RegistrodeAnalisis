@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\Analisis.cs" />
+    <Compile Include="Entidades\AnalisisDetalle.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
