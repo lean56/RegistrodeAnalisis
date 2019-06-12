@@ -11,6 +11,7 @@ namespace RegistrodeAnalisis.DAL
     public class Contexto : DbContext
     {
         public DbSet<Analisis> Analisi { get; set; }
+        public DbSet<Paciente> Paciente { get; set; }
         public DbSet<TiposAnalisis> TipoAnalisi {get;set;}
 
         public Contexto() :base("Constr"){ }
