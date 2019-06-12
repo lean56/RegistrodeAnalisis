@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RegistrodeAnalisis.UI.Registro
 {
-    public partial class RegistrodeAnalisis : Form
+    public partial class rPaciente : Form
     {
-        public RegistrodeAnalisis()
+        public rPaciente()
         {
             InitializeComponent();
         }

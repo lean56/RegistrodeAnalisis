@@ -1,6 +1,6 @@
 ﻿namespace RegistrodeAnalisis.UI.Registro
 {
-    partial class RegistrodeAnalisis
+    partial class rAnalisis
     {
         /// <summary>
         /// Required designer variable.
@@ -40,23 +40,26 @@
             this.EliminarButton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Nuevobutton = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TipoAnalisisButton
             // 
-            this.TipoAnalisisButton.Location = new System.Drawing.Point(253, 103);
+            this.TipoAnalisisButton.Location = new System.Drawing.Point(260, 103);
             this.TipoAnalisisButton.Name = "TipoAnalisisButton";
             this.TipoAnalisisButton.Size = new System.Drawing.Size(40, 23);
             this.TipoAnalisisButton.TabIndex = 43;
             this.TipoAnalisisButton.Text = "+";
             this.TipoAnalisisButton.UseVisualStyleBackColor = true;
+            this.TipoAnalisisButton.Click += new System.EventHandler(this.TipoAnalisisButton_Click);
             // 
             // TipoAnalisiscomboBox
             // 
             this.TipoAnalisiscomboBox.FormattingEnabled = true;
-            this.TipoAnalisiscomboBox.Location = new System.Drawing.Point(126, 105);
+            this.TipoAnalisiscomboBox.Location = new System.Drawing.Point(133, 105);
             this.TipoAnalisiscomboBox.Name = "TipoAnalisiscomboBox";
             this.TipoAnalisiscomboBox.Size = new System.Drawing.Size(121, 21);
             this.TipoAnalisiscomboBox.TabIndex = 42;
@@ -64,7 +67,7 @@
             // label02
             // 
             this.label02.AutoSize = true;
-            this.label02.Location = new System.Drawing.Point(39, 108);
+            this.label02.Location = new System.Drawing.Point(39, 103);
             this.label02.Name = "label02";
             this.label02.Size = new System.Drawing.Size(81, 13);
             this.label02.TabIndex = 41;
@@ -72,7 +75,7 @@
             // 
             // BuscarButton
             // 
-            this.BuscarButton.Location = new System.Drawing.Point(234, 9);
+            this.BuscarButton.Location = new System.Drawing.Point(242, 9);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(55, 45);
             this.BuscarButton.TabIndex = 40;
@@ -80,14 +83,14 @@
             // 
             // NombretextBox
             // 
-            this.NombretextBox.Location = new System.Drawing.Point(126, 63);
+            this.NombretextBox.Location = new System.Drawing.Point(133, 63);
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(120, 20);
             this.NombretextBox.TabIndex = 39;
             // 
             // IdnumericUpDown
             // 
-            this.IdnumericUpDown.Location = new System.Drawing.Point(126, 23);
+            this.IdnumericUpDown.Location = new System.Drawing.Point(133, 23);
             this.IdnumericUpDown.Name = "IdnumericUpDown";
             this.IdnumericUpDown.Size = new System.Drawing.Size(82, 20);
             this.IdnumericUpDown.TabIndex = 38;
@@ -115,7 +118,7 @@
             this.groupBox1.Controls.Add(this.EliminarButton);
             this.groupBox1.Controls.Add(this.Guardarbutton);
             this.groupBox1.Controls.Add(this.Nuevobutton);
-            this.groupBox1.Location = new System.Drawing.Point(42, 158);
+            this.groupBox1.Location = new System.Drawing.Point(42, 175);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(281, 88);
             this.groupBox1.TabIndex = 44;
@@ -148,11 +151,29 @@
             this.Nuevobutton.TabIndex = 5;
             this.Nuevobutton.UseVisualStyleBackColor = true;
             // 
-            // RegistrodeAnalisis
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(133, 142);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
+            this.dateTimePicker1.TabIndex = 45;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(39, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 46;
+            this.label3.Text = "Fecha";
+            // 
+            // rAnalisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 275);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.TipoAnalisisButton);
             this.Controls.Add(this.TipoAnalisiscomboBox);
@@ -162,7 +183,7 @@
             this.Controls.Add(this.IdnumericUpDown);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "RegistrodeAnalisis";
+            this.Name = "rAnalisis";
             this.Text = "Registro de Analisis";
             ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -185,5 +206,7 @@
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button Guardarbutton;
         private System.Windows.Forms.Button Nuevobutton;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label3;
     }
 }
