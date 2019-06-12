@@ -1,6 +1,6 @@
 ﻿namespace RegistrodeAnalisis.UI.Registro
 {
-    partial class TiposAnalisis
+    partial class rTiposAnalisis
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
@@ -37,8 +38,10 @@
             this.DescripciontextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -60,6 +63,7 @@
             this.EliminarButton.Size = new System.Drawing.Size(75, 56);
             this.EliminarButton.TabIndex = 6;
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // Guardarbutton
             // 
@@ -69,6 +73,7 @@
             this.Guardarbutton.Size = new System.Drawing.Size(75, 56);
             this.Guardarbutton.TabIndex = 0;
             this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
             // 
             // Nuevobutton
             // 
@@ -78,6 +83,7 @@
             this.Nuevobutton.Size = new System.Drawing.Size(71, 56);
             this.Nuevobutton.TabIndex = 5;
             this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // Buscarbutton
             // 
@@ -88,6 +94,7 @@
             this.Buscarbutton.Size = new System.Drawing.Size(60, 46);
             this.Buscarbutton.TabIndex = 25;
             this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // IDnumericUpDown
             // 
@@ -121,7 +128,11 @@
             this.label3.TabIndex = 21;
             this.label3.Text = "ID";
             // 
-            // TiposAnalisis
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
+            // 
+            // rTiposAnalisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,10 +143,11 @@
             this.Controls.Add(this.DescripciontextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Name = "TiposAnalisis";
+            this.Name = "rTiposAnalisis";
             this.Text = "Tipos de Analisis";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +164,6 @@
         private System.Windows.Forms.TextBox DescripciontextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RegistrodeAnalisis.BLL;
 using RegistrodeAnalisis.Entidades;
 using RegistrodeAnalisis.UI.Registro;
 
@@ -19,12 +20,23 @@ namespace RegistrodeAnalisis.UI.Registro
         public rAnalisis()
         {
             InitializeComponent();
+            ListadoAnalisis();
        //     this.detalle = new List<AnalisisDetalle>();
+        }
+
+        private void ListadoAnalisis()
+        {
+            var listado = new List<TiposAnalisis>();
+
+            listado = TiposAnalisisBLL.GetList(p => true);
+            TipoAnalisiscomboBox.DataSource = listado;
+            TipoAnalisiscomboBox.DisplayMember = "TipoAnalisis";
+            TipoAnalisiscomboBox.ValueMember = "descripcion";
         }
 
         private void TipoAnalisisButton_Click(object sender, EventArgs e)
         {
-            TiposAnalisis ta = new TiposAnalisis();
+            rTiposAnalisis ta = new rTiposAnalisis();
             ta.ShowDialog();
         }
         private Analisis LlenarClase()
@@ -46,6 +58,12 @@ namespace RegistrodeAnalisis.UI.Registro
             //  producto.Detalles = this.detalle;
             */
             return analisis;
+        }
+
+        private void Pacientebutton_Click(object sender, EventArgs e)
+        {
+            rPaciente rp = new rPaciente();
+            rp.Show();
         }
     }
 }

@@ -42,13 +42,14 @@
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
+            this.Pacientebutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TipoAnalisisButton
             // 
-            this.TipoAnalisisButton.Location = new System.Drawing.Point(260, 103);
+            this.TipoAnalisisButton.Location = new System.Drawing.Point(260, 131);
             this.TipoAnalisisButton.Name = "TipoAnalisisButton";
             this.TipoAnalisisButton.Size = new System.Drawing.Size(40, 23);
             this.TipoAnalisisButton.TabIndex = 43;
@@ -59,7 +60,7 @@
             // TipoAnalisiscomboBox
             // 
             this.TipoAnalisiscomboBox.FormattingEnabled = true;
-            this.TipoAnalisiscomboBox.Location = new System.Drawing.Point(133, 105);
+            this.TipoAnalisiscomboBox.Location = new System.Drawing.Point(133, 133);
             this.TipoAnalisiscomboBox.Name = "TipoAnalisiscomboBox";
             this.TipoAnalisiscomboBox.Size = new System.Drawing.Size(121, 21);
             this.TipoAnalisiscomboBox.TabIndex = 42;
@@ -67,7 +68,7 @@
             // label02
             // 
             this.label02.AutoSize = true;
-            this.label02.Location = new System.Drawing.Point(39, 103);
+            this.label02.Location = new System.Drawing.Point(39, 131);
             this.label02.Name = "label02";
             this.label02.Size = new System.Drawing.Size(81, 13);
             this.label02.TabIndex = 41;
@@ -118,7 +119,7 @@
             this.groupBox1.Controls.Add(this.EliminarButton);
             this.groupBox1.Controls.Add(this.Guardarbutton);
             this.groupBox1.Controls.Add(this.Nuevobutton);
-            this.groupBox1.Location = new System.Drawing.Point(42, 175);
+            this.groupBox1.Location = new System.Drawing.Point(51, 220);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(281, 88);
             this.groupBox1.TabIndex = 44;
@@ -153,7 +154,8 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(133, 142);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(133, 170);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
             this.dateTimePicker1.TabIndex = 45;
@@ -161,17 +163,28 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 142);
+            this.label3.Location = new System.Drawing.Point(39, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 46;
             this.label3.Text = "Fecha";
             // 
+            // Pacientebutton
+            // 
+            this.Pacientebutton.Location = new System.Drawing.Point(260, 63);
+            this.Pacientebutton.Name = "Pacientebutton";
+            this.Pacientebutton.Size = new System.Drawing.Size(40, 23);
+            this.Pacientebutton.TabIndex = 47;
+            this.Pacientebutton.Text = "+";
+            this.Pacientebutton.UseVisualStyleBackColor = true;
+            this.Pacientebutton.Click += new System.EventHandler(this.Pacientebutton_Click);
+            // 
             // rAnalisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(367, 275);
+            this.ClientSize = new System.Drawing.Size(367, 320);
+            this.Controls.Add(this.Pacientebutton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.groupBox1);
@@ -208,5 +221,6 @@
         private System.Windows.Forms.Button Nuevobutton;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Pacientebutton;
     }
 }

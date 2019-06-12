@@ -118,5 +118,28 @@ namespace RegistrodeAnalisis.BLL
             return Lista;
         }
 
+        public static bool Duplicado(string descripcion)
+        {
+            bool paso = false;
+            Contexto db = new Contexto();
+            try
+            {
+                if (db.TipoAnalisi.Any(p => p.Descripcion.Equals(descripcion)))
+                {
+                    paso = true;
+                }
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                db.Dispose();
+            }
+            return paso;
+        }
+
     }
 }
