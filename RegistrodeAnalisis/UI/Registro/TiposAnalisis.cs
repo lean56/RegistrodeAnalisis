@@ -7,21 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using RegistrodeAnalisis.UI.Registro;
 
-namespace RegistrodeAnalisis
+namespace RegistrodeAnalisis.UI.Registro
 {
-    public partial class Main : Form
+    public partial class TiposAnalisis : Form
     {
-        public Main()
+        public TiposAnalisis()
         {
             InitializeComponent();
-        }
-
-        private void rAToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            rAnalisis ra = new rAnalisis();
-            ra.Show();
         }
     }
 }
