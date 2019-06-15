@@ -10,21 +10,24 @@ namespace RegistrodeAnalisis.Entidades
   public class AnalisisDetalle
     {
         [Key]
+        public int Id { get; set; }
         public int AnalisisId { get; set; }
-        public int TipoId { get; set; }
+        public string TipoAnalisis { get; set; }
         public string Resultado { get; set; }
 
         public AnalisisDetalle()
         {
+            Id = 0;
             AnalisisId = 0;
-            TipoId = 0;
+            TipoAnalisis = string.Empty;
             Resultado = string.Empty;
         }
 
-        public AnalisisDetalle(int analisisId, int tipoId, string resultado)
+        public AnalisisDetalle(int id, int analisisId, string tipoAnalisis,string resultado)
         {
+            Id = id;
             AnalisisId = analisisId;
-            TipoId = tipoId;
+            TipoAnalisis = tipoAnalisis;
             Resultado = resultado;
         }
     }

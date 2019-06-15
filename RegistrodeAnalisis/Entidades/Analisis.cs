@@ -10,21 +10,18 @@ namespace RegistrodeAnalisis.Entidades
    public class Analisis
     {
         [Key]
-
         public int AnalisisId { get; set; }
-        public int UsuarioId { get; set; }
+        public int PacienteId { get; set; }
         public DateTime Fecha { get; set; }
 
-        public virtual List<AnalisisDetalle> Detalles { get; set; }
+        public virtual List<AnalisisDetalle> DetallesAnalisis { get; set; }
 
 
         public Analisis()
         {
             AnalisisId = 0;
-            UsuarioId = 0;
-            Fecha = DateTime.Now;
-
-            Detalles = new List<AnalisisDetalle>();
+            PacienteId = 0; 
+            DetallesAnalisis = new List<AnalisisDetalle>();
         }
     }
 }

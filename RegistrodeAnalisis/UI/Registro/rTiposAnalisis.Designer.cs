@@ -58,6 +58,7 @@
             // EliminarButton
             // 
             this.EliminarButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.EliminarButton.Image = global::RegistrodeAnalisis.Properties.Resources.Button_Delete_01_25095;
             this.EliminarButton.Location = new System.Drawing.Point(200, 19);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(75, 56);
@@ -68,6 +69,7 @@
             // Guardarbutton
             // 
             this.Guardarbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Guardarbutton.Image = global::RegistrodeAnalisis.Properties.Resources.Save_37110;
             this.Guardarbutton.Location = new System.Drawing.Point(103, 19);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(75, 56);
@@ -78,6 +80,7 @@
             // Nuevobutton
             // 
             this.Nuevobutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Nuevobutton.Image = global::RegistrodeAnalisis.Properties.Resources.document_add_256_icon_icons_com_75994;
             this.Nuevobutton.Location = new System.Drawing.Point(16, 19);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(71, 56);
@@ -89,6 +92,7 @@
             // 
             this.Buscarbutton.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Buscarbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Buscarbutton.Image = global::RegistrodeAnalisis.Properties.Resources.Search_find_3519;
             this.Buscarbutton.Location = new System.Drawing.Point(211, 14);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(60, 46);

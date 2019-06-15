@@ -49,20 +49,21 @@
             this.rToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rAToolStripMenuItem});
             this.rToolStripMenuItem.Name = "rToolStripMenuItem";
-            this.rToolStripMenuItem.Size = new System.Drawing.Size(26, 20);
-            this.rToolStripMenuItem.Text = "R";
+            this.rToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.rToolStripMenuItem.Text = "Registro";
             // 
             // rAToolStripMenuItem
             // 
             this.rAToolStripMenuItem.Name = "rAToolStripMenuItem";
             this.rAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.rAToolStripMenuItem.Text = "R.A";
+            this.rAToolStripMenuItem.Text = "Registro Analisis";
             this.rAToolStripMenuItem.Click += new System.EventHandler(this.rAToolStripMenuItem_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;

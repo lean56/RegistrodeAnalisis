@@ -41,8 +41,23 @@ namespace RegistrodeAnalisis.BLL
 
             try
             {
+                var Anterior = db.Analisi.Find(analisis.AnalisisId);
+
+                foreach (var item in analisis.DetallesAnalisis)
+                {
+                    if (!analisis.DetallesAnalisis.Exists(d => d.Id == item.Id))
+                    {
+                        db.Entry(item).State = EntityState.Deleted;    
+                   }           
+                }
+
                 db.Entry(analisis).State = EntityState.Modified;
-                paso = (db.SaveChanges() > 0);
+
+                if (db.SaveChanges() > 0)
+                {
+                    paso = true;
+                }
+
             }
             catch (Exception)
             {
@@ -80,12 +95,13 @@ namespace RegistrodeAnalisis.BLL
 
         public static Analisis Buscar(int id)
         {
-            Contexto contexto = new Contexto();
+            Contexto db = new Contexto();
             Analisis analisis = new Analisis();
 
             try
             {
-                analisis = contexto.Analisi.Find(id);
+                analisis = db.Analisi.Find(id);
+                analisis.DetallesAnalisis.Count();
             }
             catch (Exception)
             {
@@ -93,7 +109,7 @@ namespace RegistrodeAnalisis.BLL
             }
             finally
             {
-                contexto.Dispose();
+                db.Dispose();
             }
             return analisis;
         }

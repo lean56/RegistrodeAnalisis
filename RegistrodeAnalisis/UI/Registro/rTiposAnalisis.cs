@@ -114,6 +114,7 @@ namespace RegistrodeAnalisis.UI.Registro
             if (paso)
             {
                 MessageBox.Show("Guardado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Dispose();
             }
             else
                 MessageBox.Show("Error al Guardar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);

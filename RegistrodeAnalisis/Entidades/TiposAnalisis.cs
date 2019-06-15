@@ -18,5 +18,11 @@ namespace RegistrodeAnalisis.Entidades
             TipoId = 0;
             Descripcion = string.Empty;
         }
+
+        public TiposAnalisis(int tipoId, string descripcion)
+        {
+            TipoId = tipoId;
+            Descripcion = descripcion;
+        }
     }
 }
